@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
-
+import cv2
 A = load_digits().images[0]
+# A = cv2.imread('1.jpeg', cv2.IMREAD_GRAYSCALE)
 
 U, S, Vt = np.linalg.svd(A, False)
 
