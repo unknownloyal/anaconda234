@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-df = pd.read_csv(r"C:\Users\Kusuma R\Downloads\archive (3)\diabetes.csv")
+df = pd.read_csv(r"diabetes.csv")
 
 X = df.iloc[:, :-1]
 y = df.iloc[:, -1]
